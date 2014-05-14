@@ -1,8 +1,5 @@
 #!/bin/bash
 # -*- Mode: sh; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
-#
-# Authors:
-#    Luã Boni <lrapelliboni@gmail.com>
 # 
 
 
