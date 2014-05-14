@@ -1,4 +1,4 @@
 ubuntu-post-install
 ===================
 
-Install ubuntu applications 
+Ubuntu Post-Install applications 
