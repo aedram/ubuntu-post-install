@@ -54,8 +54,13 @@ case $REPLY in
     sudo apt-get install mysql-server apache2 libapache2-mod-php5 php5 php5-mysql phpmyadmin -y # Install lamp stack
     sudo apt-get install ruby irb rdoc -y # Install Ruby && Ruby Gems (gem)
     
-    # NPM Packages (Node package modules)
-    sudo npm install -g bower grunt-cli # Bower && Grunt (-g = Global)
+    # Composer (Package Manager for PHP)
+    sudo curl -sS https://getcomposer.org/installer | php 
+    sudo mv composer.phar /usr/local/bin/composer
+    
+    # NPM Packages (Node package modules, -g = Global)
+    sudo npm install -g bower # Package manager for web
+    sudo npm install -g grunt-cli # Grunt = Javascript Task Runner (Build manager)
     
     # Ruby Gems packages
     sudo gem install sass # SASS
