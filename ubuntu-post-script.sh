@@ -44,10 +44,24 @@ case $REPLY in
     sudo apt-get install git-core -y # Install git
     sudo apt-get install compizconfig-settings-manager -y # Install CCSM
     sudo apt-get install oracle-java8-installer -y # Install java 8
-    sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node js)
+
+    # Node JS
+    sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node JS)
+    wget -N http://nodejs.org/dist/node-latest.tar.gz && cd node-v* && ./configure # configure Node JS
+    sudo make && sudo make install  # Compile Node JS
+    
     sudo apt-get install vim tree -y # Install vim tree
     sudo apt-get install mysql-server apache2 libapache2-mod-php5 php5 php5-mysql phpmyadmin -y # Install lamp stack
-    sudo apt-get install ruby irb rdoc -y # Install ruby
+    sudo apt-get install ruby irb rdoc -y # Install Ruby && Ruby Gems (gem)
+    
+    # NPM Packages (Node package modules)
+    sudo npm install -g bower grunt-cli # Bower && Grunt (-g = Global)
+    
+    # Ruby Gems packages
+    sudo gem install sass # SASS
+    sudo gem install compass # Compass
+    sudo gem install foundation # Foundation Framework
+    
     clear
     echo 'Todos os pacotes foram instalados com sucesso.' && quit
     ;;
