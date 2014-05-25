@@ -33,8 +33,9 @@ case $REPLY in
 # Positive action
 [Ss]* )
     # Add repository
-    sudo add-apt-repository ppa:webupd8team/java
-
+    sudo add-apt-repository ppa:webupd8team/java -y
+    sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
+    
     # Updating repository information...
     sudo apt-get update
     sudo apt-get dist-upgrade -y
@@ -44,7 +45,8 @@ case $REPLY in
     sudo apt-get install git-core -y # Install git
     sudo apt-get install compizconfig-settings-manager -y # Install CCSM
     sudo apt-get install oracle-java8-installer -y # Install java 8
-
+    sudo apt-get install sublime-text -y # Install sublime text 2
+    
     # Node JS
     sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node JS)
     wget -N http://nodejs.org/dist/node-latest.tar.gz && cd node-v* && ./configure # configure Node JS
@@ -53,6 +55,11 @@ case $REPLY in
     sudo apt-get install vim tree -y # Install vim tree
     sudo apt-get install mysql-server apache2 libapache2-mod-php5 php5 php5-mysql phpmyadmin -y # Install lamp stack
     sudo apt-get install ruby irb rdoc -y # Install Ruby && Ruby Gems (gem)
+    
+    # Google Chrome x64 (32 bit version: google-chrome-stable_current_i386.deb)
+    sudo apt-get install libxss1 && cd /tmp
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo dpkg -i google-chrome*.deb
     
     # Composer (Package Manager for PHP)
     sudo curl -sS https://getcomposer.org/installer | php 
