@@ -57,7 +57,7 @@ case $REPLY in
     sudo apt-get install ruby irb rdoc -y # Install Ruby && Ruby Gems (gem)
     
     # Google Chrome x64 (32 bit version: google-chrome-stable_current_i386.deb)
-    sudo apt-get install libxss1 && cd /tmp
+    sudo apt-get install libxss1 -y && cd /tmp
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     sudo dpkg -i google-chrome*.deb
     
