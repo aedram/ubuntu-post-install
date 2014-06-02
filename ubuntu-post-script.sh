@@ -49,7 +49,7 @@ case $REPLY in
     
     # Node JS
     sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node JS)
-    wget -N http://nodejs.org/dist/node-latest.tar.gz && cd node-v* && ./configure # configure Node JS
+    wget -N http://nodejs.org/dist/node-latest.tar.gz && tar -xvf node-latest.tar.gz && cd node-v* && ./configure # configure Node JS
     sudo make && sudo make install  # Compile Node JS
     
     sudo apt-get install vim tree -y # Install vim tree
