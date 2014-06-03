@@ -33,8 +33,9 @@ case $REPLY in
 # Positive action
 [Ss]* )
     # Add repository
-    sudo add-apt-repository ppa:webupd8team/java -y
-    sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
+    sudo add-apt-repository ppa:webupd8team/java -y # Java Oracle
+    sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y # Sublime text 2
+    sudo add-apt-repository ppa:otto-kesselgulasch/gimp -y # Gimp 
     
     # Updating repository information...
     sudo apt-get update
@@ -42,14 +43,15 @@ case $REPLY in
     
     # Install applications
     sudo apt-get install ubuntu-restricted-extras -y # Install codecs
-    sudo apt-get install git-core -y # Install git
+    sudo apt-get install git-core -y # Install Git
     sudo apt-get install compizconfig-settings-manager -y # Install CCSM
-    sudo apt-get install oracle-java8-installer -y # Install java 8
-    sudo apt-get install sublime-text -y # Install sublime text 2
-    
+    sudo apt-get install oracle-java8-installer -y # Install Java 8
+    sudo apt-get install sublime-text -y # Install Sublime Text 2
+    sudo apt-get install gimp -y # Install Gimp
+
     # Node JS
     sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node JS)
-    wget -N http://nodejs.org/dist/node-latest.tar.gz && tar -xvf node-latest.tar.gz && cd node-v* && ./configure # configure Node JS
+    cd /tmp && wget -N http://nodejs.org/dist/node-latest.tar.gz && tar -xvf node-latest.tar.gz && cd node-v* && ./configure # configure Node JS
     sudo make && sudo make install  # Compile Node JS
     
     sudo apt-get install vim tree -y # Install vim tree
