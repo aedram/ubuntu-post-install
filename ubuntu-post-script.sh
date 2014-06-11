@@ -36,6 +36,7 @@ case $REPLY in
     sudo add-apt-repository ppa:webupd8team/java -y # Java Oracle
     sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y # Sublime text 2
     sudo add-apt-repository ppa:otto-kesselgulasch/gimp -y # Gimp 
+    sudo add-apt-repository ppa:djcj/vlc-stable -y # VLC Media Player
     
     # Updating repository information...
     sudo apt-get update
@@ -48,6 +49,7 @@ case $REPLY in
     sudo apt-get install oracle-java8-installer -y # Install Java 8
     sudo apt-get install sublime-text -y # Install Sublime Text 2
     sudo apt-get install gimp -y # Install Gimp
+    sudo apt-get install vlc -y # Install VLC Media Player
 
     # Node JS
     sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node JS)
