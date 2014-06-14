@@ -37,7 +37,8 @@ case $REPLY in
     sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y # Sublime text 2
     sudo add-apt-repository ppa:otto-kesselgulasch/gimp -y # Gimp 
     sudo add-apt-repository ppa:djcj/vlc-stable -y # VLC Media Player
-    
+    sudo add-apt-repository ppa:numix/ppa -y # Numix GTK Theme and Icons
+
     # Updating repository information...
     sudo apt-get update
     sudo apt-get dist-upgrade -y
@@ -50,6 +51,9 @@ case $REPLY in
     sudo apt-get install sublime-text -y # Install Sublime Text 2
     sudo apt-get install gimp -y # Install Gimp
     sudo apt-get install vlc -y # Install VLC Media Player
+    sudo apt-get install numix-gtk-theme numix-icon-theme-circle -y # Numix Icon Theme and GTK Theme
+    sudo apt-get install numix-wallpaper-notd -y # Numix Wallpaper
+    sudo apt-get install unity-tweak-tool gnome-tweak-tool -y # Unity and Gnome Tweak Tool 
 
     # Node JS
     sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node JS)
