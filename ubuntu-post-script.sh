@@ -52,7 +52,6 @@ case $REPLY in
     sudo apt-get install gimp -y # Install Gimp
     sudo apt-get install vlc -y # Install VLC Media Player
     sudo apt-get install numix-gtk-theme numix-icon-theme-circle -y # Numix Icon Theme and GTK Theme
-    sudo apt-get install numix-wallpaper-notd -y # Numix Wallpaper
     sudo apt-get install unity-tweak-tool gnome-tweak-tool -y # Unity and Gnome Tweak Tool 
 
     # Node JS
@@ -84,6 +83,10 @@ case $REPLY in
     sudo gem install compass # Compass
     sudo gem install foundation # Foundation Framework
     
+
+    # Config. environment
+    gsettings set com.canonical.indicator.session show-real-name-on-panel true # Show username
+
     clear
     echo 'Todos os pacotes foram instalados com sucesso.' && quit
     ;;
