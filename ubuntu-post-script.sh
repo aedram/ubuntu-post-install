@@ -53,6 +53,7 @@ case $REPLY in
     sudo apt-get install vlc -y # Install VLC Media Player
     sudo apt-get install numix-gtk-theme numix-icon-theme-circle -y # Numix Icon Theme and GTK Theme
     sudo apt-get install unity-tweak-tool gnome-tweak-tool -y # Unity and Gnome Tweak Tool 
+    sudo apt-get install guake -y # Guake terminal     
 
     # Node JS
     sudo apt-get install g++ curl libssl-dev apache2-utils -y  # Install applications utils (to compile Node JS)
