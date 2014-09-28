@@ -86,7 +86,7 @@ case $REPLY in
 
     # Config. environment
     gsettings set com.canonical.indicator.session show-real-name-on-panel true # Show username
-
+    gsettings set com.canonical.desktop.interface scrollbar-mode normal # Show default scrollbars
     clear
     echo 'Todos os pacotes foram instalados com sucesso.' && quit
     ;;
